@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "temp-project": {
+    "cs2-cases-frontend": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/temp-project",
+            "outputPath": "dist/cs2-cases-frontend",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "temp-project:build:production"
+              "buildTarget": "cs2-cases-frontend:build:production"
             },
             "development": {
-              "buildTarget": "temp-project:build:development"
+              "buildTarget": "cs2-cases-frontend:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -98,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "04093627-d343-4938-aabb-f20cc716aa40"
   }
 }
