@@ -4,11 +4,7 @@
     font-weight: bold;
 }
 
-a {
-    text-decoration: none;
-    color: #fff;
 
-}
 
 // Start header
 
@@ -17,6 +13,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
+
+    a {
+        text-decoration: none;
+        color: #271212;
+    }
 
     .header-container {
         align-items: center;
@@ -31,18 +32,25 @@ header {
         }
 
         .menu-item {
+            display: inline-flex;
+            justify-content: center;
             padding: 5px 10px;
+            
         }
         .menu-item:hover {
             padding: 5px 10px;
-            color: #fff;
+            color: #e92020;
             box-shadow: 0 0 20px #a200fa, 0 0 30px #a200fa;
             border-radius: 30px;
         }
     }
         
         
-
+    .icons {
+        padding-right: 10px;
+        width: 18px;
+        height: 18px;
+    }
     .header-user {
         button {
             display: flex;
