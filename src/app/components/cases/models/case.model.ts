@@ -1,12 +1,4 @@
-export interface SkinModel {
-  _id: string;
-  weaponName: string;
-  skinName: string;
-  description: string;
-  price: number;
-  rarity: string;
-  imageUrl: string;
-}
+import {SkinModel} from '@components/cases/models/skin.model';
 
 export interface CaseModel {
   _id: string;
@@ -14,5 +6,5 @@ export interface CaseModel {
   imageUrl: string;
   price: number;
   isDashboardVisible: boolean;
-  skins: SkinModel[];
+  skins: {skin: SkinModel, dropRate: number}[];
 }

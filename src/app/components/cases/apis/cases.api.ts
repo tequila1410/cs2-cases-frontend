@@ -12,4 +12,12 @@ export class CasesApi {
   getAllCases() {
     return this.httpClient.get<CaseModel[]>('api_url/cases/getAll');
   }
+
+  getCaseById(caseId: string) {
+    const params = {
+      caseId
+    }
+
+    return this.httpClient.get<CaseModel>('api_url/case/getById', {params})
+  }
 }

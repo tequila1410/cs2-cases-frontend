@@ -17,4 +17,8 @@ export class CasesFacade {
         })
       )
   }
+
+  getCaseById(caseId: string) {
+    return this.api.getCaseById(caseId)
+  }
 }

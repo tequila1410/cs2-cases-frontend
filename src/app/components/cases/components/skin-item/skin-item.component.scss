@@ -1,0 +1,45 @@
+.skin {
+  max-width: 200px;
+  padding: 12px;
+  background-color: #1e1e29;
+  border-radius: 5px;
+  transition: scale ease-in-out .2s;
+  border-top: 4px solid;
+  border-top-color: #F7B62D;
+
+  &:hover {
+    scale: 1.03;
+    cursor: pointer;
+  }
+
+  .drop-chance {
+    display: flex;
+    font-size: .75rem;
+
+    .title {
+      color: #8f9daa;
+    }
+
+    .value {
+
+    }
+  }
+
+  .image {
+    margin: 0px 38px;
+  }
+
+  .description {
+    .weapon-name {
+      color: #8f9daa;
+      font-size: 10px;
+    }
+
+    .skin-name {
+      color: #f1f1f1;
+      font-size: 12px;
+      font-weight: 600;
+      font-weight: 200;
+    }
+  }
+}

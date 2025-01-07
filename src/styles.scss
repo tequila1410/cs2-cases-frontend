@@ -2,7 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'RussoOne';
+  src: url('/assets/fonts/RussoOne.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Varela';
+  src: url('/assets/fonts/Varela.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
+  font-family: 'Varela', sans-serif;
   margin: 0;
   border-image: url("assets/images/background.jpg");
 }

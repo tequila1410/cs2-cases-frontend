@@ -2,7 +2,7 @@
   <h1>Check case. Open now.</h1>
   <div class="cases">
     <div *ngFor="let case of cases">
-      <cs2-case-item [case]="case"></cs2-case-item>
+      <cs2-case-item [case]="case" (caseClickHandler)="selectCase($event)"></cs2-case-item>
     </div>
   </div>
 </div>

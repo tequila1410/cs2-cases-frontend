@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {CaseModel} from '@components/cases/models/case.model';
 
 @Component({
@@ -11,5 +11,14 @@ import {CaseModel} from '@components/cases/models/case.model';
 export class CaseItemComponent {
 
   @Input() case: CaseModel;
+  @Output() caseClickHandler: EventEmitter<CaseModel>;
+
+  constructor() {
+    this.caseClickHandler = new EventEmitter<CaseModel>();
+  }
+
+  caseClick() {
+    this.caseClickHandler.emit(this.case);
+  }
 
 }

@@ -1,0 +1,10 @@
+<section class="case-view container mx-auto px-4">
+  <div class="case-item">
+    <cs2-case-item [case]="caseItem"></cs2-case-item>
+  </div>
+  <div class="skins">
+    <div *ngFor="let caseSkin of caseItem.skins" class="skin-item">
+      <cs2-skin-item [skin]="caseSkin.skin" [dropValue]="caseSkin.dropRate"></cs2-skin-item>
+    </div>
+  </div>
+</section>

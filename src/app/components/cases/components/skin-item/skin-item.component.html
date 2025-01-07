@@ -1,0 +1,14 @@
+<div class="skin" [ngStyle]="{'border-top-color': SkinRarity[skin.rarity]}">
+  <div *ngIf="dropValue" class="drop-chance">
+    <div class="title">Drops</div>
+    <span>&nbsp;</span>
+    <div class="value">{{dropValue}}%</div>
+  </div>
+  <div class="image">
+    <img [src]="skin.imageUrl" [alt]="skin.skinName" >
+  </div>
+  <div class="description">
+    <div class="weapon-name">{{skin.weaponName}}</div>
+    <div class="skin-name">{{skin.skinName}}</div>
+  </div>
+</div>
