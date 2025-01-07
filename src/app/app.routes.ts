@@ -2,10 +2,10 @@ import { Routes } from '@angular/router';
 import {CasesComponent} from '@components/cases/cases.component';
 
 export const routes: Routes = [{
-  path: 'cases',
-  loadComponent: () => import('./components/cases/cases.component').then(c => c.CasesComponent)
+  path: 'case',
+  loadChildren: () => import('./components/cases/cases.router').then(c => c.CASES_ROUTER)
 }, {
   path: '',
-  redirectTo: '/cases',
+  redirectTo: '/case',
   pathMatch: 'full'
 }];

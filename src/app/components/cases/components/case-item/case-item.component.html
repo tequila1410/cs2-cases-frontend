@@ -1,0 +1,10 @@
+<div class="case" (click)="caseClick()">
+  <div class="case_image">
+    <img [src]="case.imageUrl" [alt]="case.name">
+  </div>
+  <div class="case_name">{{case.name}}</div>
+  <div class="case_price">
+    <span class="currency">$</span>
+    <span claSS="count">{{case.price}}</span>
+  </div>
+</div>
