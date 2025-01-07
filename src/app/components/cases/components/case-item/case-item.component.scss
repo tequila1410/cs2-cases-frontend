@@ -1,0 +1,21 @@
+.case {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &_image {
+    transition: opacity ease-in-out .2s;
+
+    &:hover {
+      opacity: 0.2;
+      cursor: pointer;
+    }
+  }
+
+  &_price {
+
+    .currency {
+      color: #2fa662;
+    }
+  }
+}
