@@ -39,14 +39,14 @@ header {
         }
         .menu-item:hover {
             padding: 5px 10px;
-            color: #e92020;
+            color: #000000;
             box-shadow: 0 0 20px #a200fa, 0 0 30px #a200fa;
             border-radius: 30px;
         }
     }
         
         
-    .icons {
+    .header-icon {
         padding-right: 10px;
         width: 18px;
         height: 18px;
@@ -72,11 +72,6 @@ header {
             background: #a200fa;
             box-shadow: 0 0 20px #a200fa, 0 0 30px #a200fa
 
-        }
-        img {
-            padding-right: 10px;
-            width: 20px;
-            height: 20px;
         }
     }
 }   
