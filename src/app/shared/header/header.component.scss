@@ -7,10 +7,10 @@ header {
     align-items: center;
     padding: 10px 50px;
     background-color: #123435;
+    color: bisque;  
 
     a {
         text-decoration: none;
-        color: bisque;
         cursor: pointer;
     }
     a:hover img {
@@ -33,12 +33,11 @@ header {
             justify-content: center;
             align-items: center;
             padding: 6px 12px;
-            line-height: 16px;
-            color: #fff;     
+            line-height: 16px; 
         }
         .menu-item:hover {
             color: #2cbfc4;
-            text-shadow: rgb(28, 150, 180) 6px 0 16px;
+            text-shadow: #1e9bee 6px 0 16px;
             transform: scale(1.1);
         }
     }
@@ -71,7 +70,6 @@ header {
         
         .bn54 .bn54span {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: #ffffff;
             font-size: 12px;
             font-weight: 500;
             letter-spacing: 0.7px;
