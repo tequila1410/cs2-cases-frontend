@@ -1,14 +1,16 @@
 .footer {
-    margin-top: 80px;
-    font-weight: 600;
-    color: bisque;
-    padding: 100px 100px 20px;
     background-color: rgb(19, 77, 77);
+    .footer-container {
+        margin-top: 80px;
+        font-weight: 600;
+        color: bisque;
+        padding: 24px 0;
+    }
     .footer-statistics {
         display: flex;
         justify-content: space-around;
         text-align: center;
-        padding-bottom: 56px;
+        padding-bottom: 24px;
         div {
             display: flex;
             flex-direction: column;
@@ -48,6 +50,7 @@
 
         .footer-payment-methods {
             display: flex;
+            cursor: pointer;
         }
         .footer-social {
             display: flex;
