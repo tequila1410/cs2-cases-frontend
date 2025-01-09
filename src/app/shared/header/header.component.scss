@@ -33,12 +33,15 @@ header {
             justify-content: center;
             align-items: center;
             padding: 6px 12px;
-            line-height: 16px; 
+            line-height: 16px;
+            transition: transform 0.4s ease;
+    
         }
         .menu-item:hover {
             color: #2cbfc4;
             text-shadow: #1e9bee 6px 0 16px;
             transform: scale(1.1);
+            
         }
     }
         
@@ -120,5 +123,6 @@ header {
                 transform: translate3d(0, 0, 0) translateZ(0);
             }
         }
-    }   
+    }
 }
+
